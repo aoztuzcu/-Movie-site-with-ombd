@@ -1,0 +1,9 @@
+@import "@/scss/variables.scss";
+
+.searchBar {
+  display: flex;
+  margin-bottom: $spacer;
+  input {
+    width: 100%;
+  }
+}

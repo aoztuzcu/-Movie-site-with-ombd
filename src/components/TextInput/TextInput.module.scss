@@ -1,0 +1,20 @@
+@import "@/scss/variables.scss";
+.input {
+  padding: $input-btn-padding-y $input-btn-padding-x;
+  border: 1px solid $light;
+  font-size: $font-size-base;
+  &:focus {
+    border-color: $primary-lighter;
+    outline: none;
+  }
+  &:disabled {
+    background-color: $light;
+    cursor: not-allowed;
+  }
+  &.small {
+    padding: 0.5rem;
+  }
+  &.large {
+    padding: 1.25rem;
+  }
+}

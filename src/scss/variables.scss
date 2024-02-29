@@ -1,0 +1,37 @@
+$font-family-sans-serif: "Fira Sans", sans-serif;
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-size-sm: $font-size-base * 0.875;
+$font-size-lg: $font-size-base * 1.25;
+
+$h1-font-size: $font-size-base * 4;
+$h2-font-size: $font-size-base * 2.5;
+$h3-font-size: $font-size-base * 1.5;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base;
+$h6-font-size: $font-size-base;
+
+$primary: #217fec;
+$secondary: #b430bf;
+$dark: #19191b;
+$light: #f3f3f3;
+$primary-light: lighten($primary, 10%);
+$primary-lighter: lighten($primary, 20%);
+$primary-lightest: lighten($primary, 30%);
+$primary-dark: darken($primary, 10%);
+$primary-darker: darken($primary, 20%);
+$primary-darkest: darken($primary, 30%);
+$secondary-dark: darken($secondary, 10%);
+
+$input-btn-padding-y: 0.75rem;
+$input-btn-padding-x: 1rem;
+$input-btn-font-size: 1.25rem;
+$input-font-weight: 400;
+$input-border-width: 0.125rem;
+$input-border-radius: 0;
+
+$input-focus-border-color: lighten($secondary, 20%);
+$input-focus-box-shadow: 0 0.5rem 0.5rem rgba($secondary, 0.15);
+//$box-shadow: 0 0.5rem 1rem rgba($black, 0.15) !default;
+$spacer: 1rem;
+$spacer-xs: 0.5rem;
+$spacer-sm: 0.75rem;

@@ -1,0 +1,49 @@
+@import "@/scss/variables.scss";
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  &.active {
+    display: block;
+  }
+  .background {
+    background: rgba(black, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+  }
+  .content {
+    max-width: 480px;
+    background: $light;
+    position: relative;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    article {
+      padding: $spacer;
+    }
+
+    header {
+      position: relative;
+      p {
+        font-weight: bold;
+        padding: $spacer-sm $spacer;
+        font-size: $font-size-lg;
+        margin: 0;
+      }
+      button {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}

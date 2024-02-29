@@ -1,0 +1,29 @@
+@import "@/scss/variables.scss";
+.button {
+  padding: $input-btn-padding-y $input-btn-padding-x;
+  font-size: $font-size-base;
+  border-radius: $input-border-radius;
+  color: $light;
+  border: none;
+  &.primary {
+    // buttonun primary classı var ise
+    background-color: $primary;
+    &:hover {
+      background-color: $primary-dark;
+    }
+  }
+  &.danger {
+    background-color: $secondary;
+    &:hover {
+      background-color: $secondary-dark;
+    }
+  }
+  &.small {
+    font-size: $font-size-sm;
+    padding: calc($input-btn-padding-y * 0.5) calc($input-btn-padding-x * 0.75);
+  }
+  &.disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+  }
+}
