@@ -31,4 +31,10 @@
       transform: translate(0, 0);
     }
   }
+  .buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
 }

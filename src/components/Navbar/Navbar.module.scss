@@ -1,1 +1,20 @@
 @import "@/scss/variables.scss";
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: $spacer;
+  .logo {
+    margin-right: auto;
+  }
+  .navItem {
+    padding: $spacer-sm $spacer;
+    background: $light;
+    text-decoration: none;
+    font-weight: bold;
+    &.active {
+      background: $secondary;
+      color: $light;
+    }
+  }
+}

@@ -1,10 +1,10 @@
 import cls from "classnames";
 import styles from "./Button.module.scss";
 
-const Button = ({ children, onClick, variant, size, disabled }) => {
+const Button = ({ children, onClick, variant, size, disabled, className }) => {
   return (
     <button
-      className={cls(styles.button, styles[variant], {
+      className={cls(styles.button, className, styles[variant], {
         [styles.disabled]: disabled,
         [styles[size]]: size,
       })}
